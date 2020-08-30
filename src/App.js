@@ -27,4 +27,9 @@ const mapStateToProps = state => {
   }
 }
 
-export default connect(mapStateToProps)(App)
+const mapDispatchToProps = dispatch => {
+  return {
+    fetchCats: () => dispatch(fetchCats())
+  }
+}
+export default connect(mapStateToProps, mapDispatchToProps)(App)
