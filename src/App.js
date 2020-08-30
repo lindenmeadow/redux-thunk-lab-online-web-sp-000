@@ -12,5 +12,12 @@ class App extends Component {
   }
 }
 
-export default App
+const mapStateToProps = state => {
+  return {
+    catPics: state.cats,
+    loading: state.loading
+  }
+}
+
+export default connect(mapStateToProps)(App)
 
