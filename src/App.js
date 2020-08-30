@@ -14,7 +14,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>CatBook</h1>
-        {/* missing component */}
+        <CatList catPics={this.props.catPics}/>
       </div>
     );
   }
